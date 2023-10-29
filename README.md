@@ -1,9 +1,9 @@
-Билд на <a href='https://auto-gobezar.vercel.app/'>Vercel</a></br/>
-React</br/>
-TypeScript</br/>
-React Router Dom</br/>
-Redux Toolkit</br/>
-Formik</br/>
+Билд на <a href='https://auto-gobezar.vercel.app/'>Vercel</a><br/>
+React<br/>
+TypeScript<br/>
+React Router Dom<br/>
+Redux Toolkit<br/>
+Formik<br/>
 
 # Getting Started with Create React App
 
