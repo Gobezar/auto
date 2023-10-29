@@ -7,6 +7,8 @@ import LoginPage from "../pages/LoginPage/UI/LoginPage";
 import NotFoundPage from "../pages/NotFoundPage/UI/NotFoundPage";
 import { useAppDispatch, useAppSelector } from "./store/reduxHooks";
 import { logIn } from "../pages/LoginPage/model/LoginPageSlice";
+import ContactsPage from "../pages/ContactsPage/UI/ContactsPage";
+import AboutPage from "../pages/AboutPage/UI/AboutPage";
 
 const AppRouter = () => {
   const dispatch = useAppDispatch();
@@ -25,6 +27,8 @@ const AppRouter = () => {
           <Route element={<MainPage />} path="/" />
           <Route element={<ItemInfoPage />} path="/item/:id" />
           <Route element={<CreateCarPage />} path="/createCar" />
+          <Route element={<ContactsPage />} path="/contacts" />
+          <Route element={<AboutPage />} path="/about" />
           <Route element={<LoginPage />} path="/login" />
           <Route element={<NotFoundPage />} path="*"></Route>
         </Routes>
