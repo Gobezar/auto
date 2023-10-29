@@ -4,6 +4,7 @@ TypeScript<br/>
 React Router Dom<br/>
 Redux Toolkit<br/>
 Formik<br/>
+Feature Sliced Design
 
 # Getting Started with Create React App
 
