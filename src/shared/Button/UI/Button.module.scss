@@ -1,0 +1,32 @@
+.button {
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(230, 35, 35);
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  transition:
+    background-color 0.5s,
+    border 0.5s,
+    color 0.5s,
+    transform 0.15s ease,
+    -webkit-transform 0.15s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: rgb(230, 35, 35);
+    border: 1px solid rgb(230, 35, 35);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.middle {
+  width: 270px;
+}
+.big {
+  width: 360px;
+}

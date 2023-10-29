@@ -1,0 +1,27 @@
+.filterItemsWrapper {
+  margin: 0px 0px 50px 50px;
+  select {
+    width: 300px;
+    padding: 20px 48px 20px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    appearance: none;
+    background: url(../../../../public/images/arrowdown.svg);
+    background-position-x: calc(100% - 16px);
+    background-position-y: calc(100% - 20px);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-color: rgb(245, 245, 245);
+
+    &:hover {
+      outline: 1px solid rgb(245, 245, 245);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .brandSelect {
+    margin-right: 50px;
+  }
+}

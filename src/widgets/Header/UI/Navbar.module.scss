@@ -1,0 +1,40 @@
+.navbarWrapper {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(230, 35, 35);
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    li {
+      padding: 5px;
+      color: #fff;
+      font-weight: 700;
+      margin-right: 50px;
+      display: inline-block;
+      line-height: 1;
+      cursor: pointer;
+      &:after {
+        background-color: #fff;
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz--transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      &:focus::after {
+        width: 100%;
+      }
+    }
+  }
+}

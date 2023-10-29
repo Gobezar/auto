@@ -1,0 +1,21 @@
+.itemInfoCharacteristicsWrapper {
+  h2 {
+    font-size: 62px;
+    margin-bottom: 40px;
+  }
+  span {
+    font-size: 30px;
+  }
+  .headerSpan {
+    font-weight: 700;
+  }
+  .brandWrapper,
+  .colorWrapper,
+  .priceWrapper,
+  .brandWrapper,
+  .engineWrapper,
+  .transmissonWrapper,
+  .reserveWrapper {
+    margin-bottom: 20px;
+  }
+}

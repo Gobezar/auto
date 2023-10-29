@@ -1,0 +1,68 @@
+.addingNewCarWrapper {
+  width: 100%;
+  display: flex;
+  transform: translateX(35%);
+  .fieldWrapper {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    .selectField {
+      width: 200px;
+      height: 30px;
+      padding: 5px 10px;
+      margin-right: 20px;
+      background-color: rgb(245, 245, 245);
+      border: none;
+      cursor: pointer;
+      appearance: none;
+      background: url(../../../../public/images/arrowdown.svg);
+      background-position-x: calc(100% - 13px);
+      background-position-y: calc(100% - 9px);
+      background-repeat: no-repeat;
+      background-size: 10px;
+      background-color: rgb(245, 245, 245);
+
+      &:hover {
+        outline: 1px solid rgb(245, 245, 245);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .inputWrapper {
+      width: 200px;
+      height: 30px;
+      padding: 5px 10px;
+      margin-right: 20px;
+      background-color: rgb(245, 245, 245);
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        outline: 1px solid rgb(245, 245, 245);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      margin-right: 20px;
+      font-weight: 700;
+    }
+    textarea {
+      width: 300px;
+      height: 100px;
+      resize: none;
+      padding: 5px;
+      margin-right: 20px;
+    }
+  }
+
+  .error {
+    color: red;
+    font-weight: 700;
+  }
+}
