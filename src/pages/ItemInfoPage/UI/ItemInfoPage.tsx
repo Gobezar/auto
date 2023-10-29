@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import ItemInfo from "../../../widgets/ItemInfo/UI/ItemInfo";
 import Button from "../../../shared/Button/UI/Button";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +7,6 @@ import { FetchData } from "../../../app/model/fetchDataSlice";
 import cl from "./ItemInfoPage.module.scss";
 
 const ItemInfoPage = () => {
-  const { id } = useParams();
   const navigate = useNavigate();
   const { data } = useAppSelector((state) => state.fetchDataSlice);
   const dispatch = useAppDispatch();
