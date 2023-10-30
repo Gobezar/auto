@@ -18,14 +18,14 @@ const ItemInfo = () => {
     <>
       <div className={cl.itemInfoWrapper}>
         {filteredItem && filteredItem[0] && !isLoading && !isError && (
-          <>
-            <div>
+          <div className={cl.itemImageWrapper}>
+            <div className={cl.imageWrapper}>
               <ItemInfoImage filteredItem={filteredItem} />
             </div>
-            <div>
+            <div className={cl.itemCharacteristicsWrapper}>
               <ItemInfoCharacteristics filteredItem={filteredItem} />
             </div>
-          </>
+          </div>
         )}
 
         {isError && (

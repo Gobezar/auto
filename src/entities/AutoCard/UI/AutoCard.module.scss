@@ -9,6 +9,7 @@
   align-items: start;
   flex-direction: column;
   transition: scale 0.5s;
+  overflow: hidden;
 
   &:hover {
     scale: 1.05;
@@ -22,6 +23,7 @@
     img {
       height: 100%;
       width: 100%;
+      object-fit: cover;
     }
   }
 
