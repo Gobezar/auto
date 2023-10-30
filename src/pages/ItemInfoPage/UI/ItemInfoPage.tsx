@@ -4,15 +4,16 @@ import Button from "../../../shared/Button/UI/Button";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../app/store/reduxHooks";
 import { FetchData } from "../../../app/model/fetchDataSlice";
+
 import cl from "./ItemInfoPage.module.scss";
 
 const ItemInfoPage = () => {
   const navigate = useNavigate();
-  const { data } = useAppSelector((state) => state.fetchDataSlice);
+  const { currentPage } = useAppSelector((state) => state.fetchDataSlice);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    data.length <= 49 && dispatch(FetchData());
+    dispatch(FetchData(currentPage));
     window.scrollTo(0, 0);
   }, []);
 
